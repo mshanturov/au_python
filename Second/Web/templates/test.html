@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Тест
+{% endblock %}
+
+{% block content %}
+<h2>Ты же любишь теорию чисел?!</h2>
+<h3>Введите число!</h3>
+
+<p></p>
+
+<form action="/test" method="GET">
+  <input type="number" value="{{name}}" name="name" />
+  <input type="submit" value="Get!">
+</form>
+
+<p>Ваше число {{name}}</p>
+{% endblock %}
